@@ -62,4 +62,17 @@ $('.slider__list').slick({
 //sticky header
 $(document).ready(function(){
   $("#nav").sticky({topSpacing:0});
+
+  $('.image-popup-vertical-fit').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    image: {
+      verticalFit: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300 // don't foget to change the duration also in CSS
+    }
+    
+  });
 });

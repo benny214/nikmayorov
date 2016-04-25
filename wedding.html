@@ -17,9 +17,8 @@
   <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="libs/animate/animate.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
-  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="libs/magnificPopup/magnificPopup.css"/>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/media.css">
   <script src="libs/modernizr/modernizr.js"></script>
 </head>
 <body>
@@ -145,10 +144,13 @@
   <!-- start .cards-->
   <section class="cards">
     <div class="container">
+      <div class="col-md-12 cards__heading">
+        <h2>Наши услуги</h2>
+      </div>
       <div class="row">
         <div class="col-md-3">
           <ul class="service__list">
-            <li class="service__item">Пакет Мини - 12000 руб.</li>
+            <li class="service__item"><h3>Пакет Мини <br> 12000 руб.</h3></li>
             <li class="service__item"><img src="img/birds.svg"></li>
             <li class="service__item">- фотосъемка 6 часов</li>
             <li class="service__item">- Цветокоррекция, всех снимков(от 300 снимков)</li>
@@ -156,73 +158,535 @@
           </ul>
         </div>
         <div class="col-md-3">
-          Пакет Лайт - 20000 руб.
-          Профессиональная фотосъемка Вашей свадьбы 10 часов.
-          Дополнительный комплект фотоаппаратуры .
-          Профессиональная репортажная и постановочная фотосессии .
-          Обработка ВСЕХ фотографий(тоновая и цветокоррекция), ретушь.
-        Запись на DVD-диск. Оформлен изображениями с Вашего события.</div>
-        <div class="col-md-3">
-          Пакет «Стандартный»-32000 руб.
-          Профессиональная фотосъемка Вашей свадьбы 12 часов.
-          Дополнительный комплект фотоаппаратуры .
-          Профессиональная репортажная и постановочная фотосессии .
-          Обработка ВСЕХ фотографий(тоновая и цветокоррекция), ретушь.
-          Профессиональная обработка художественных снимков (150-200 шт.)
-          Печать самых лучших снимков форматом А-4(20x30) 20 шт.
-        + В ПОДАРОК стильное слайдшоу из Ваших художественных фотографий. Формат DVD .</div>
-        <div class="col-md-3">
-          Пакет «Максимальный»-45000 руб
-          Профессиональная фотосъемка Вашей свадьбы от сборов жениха и невесты до окончания программы в ресторане.
-          Дополнительный комплект фотоаппаратуры .
-          Профессиональная репортажная и постановочная фотосессии .
-          Обработка ВСЕХ фотографий(тоновая и цветокоррекция),ретушь.
-          Профессиональная обработка художественных снимков (150-200 шт.)
-          Печать самых лучших снимков форматом А-4(20x30) 20 шт.
-          Изготовление настоящей фотокниги 20x30 или 30x30
-          + В ПОДАРОК стильное слайдшоу из Ваших художественных фотографий. Формат DVD .
+          <ul class="service__list">
+            <li class="service__item"><h3>Пакет Лайт <br> 20000 руб.</h3></li>
+            <li class="service__item"><img src="img/shapes.svg" alt=""></li>
+            <li class="service__item">- Профессиональная фотосъемка Вашей свадьбы 10 часов.</li>
+            <li class="service__item">- Дополнительный комплект фотоаппаратуры .</li>
+            <li class="service__item">- Профессиональная репортажная и постановочная фотосессии .</li>
+            <li class="service__item">- Обработка ВСЕХ фотографий(тоновая и цветокоррекция), ретушь.</li>
+            <li class="service__item">- Запись на DVD-диск. Оформлен изображениями с Вашего события.</li>
+          </ul></div>
+          <div class="col-md-3">
+            <ul class="service__list">
+              <li class="service__item"><h3>Пакет «Стандартный» <br> 32000 руб.</h3></li>
+              <li class="service__item"><img src="img/people.svg" alt=""></li>
+              <li class="service__item">- Профессиональная фотосъемка Вашей свадьбы 12 часов.</li>
+              <li class="service__item">- Дополнительный комплект фотоаппаратуры .</li>
+              <li class="service__item">- Профессиональная репортажная и постановочная фотосессии .</li>
+              <li class="service__item">- Обработка ВСЕХ фотографий(тоновая и цветокоррекция), ретушь.</li>
+              <li class="service__item">- Профессиональная обработка художественных снимков (150-200 шт.)</li>
+              <li class="service__item">- Печать самых лучших снимков форматом А-4(20x30) 20 шт.</li>
+              <li class="service__item">+ В ПОДАРОК стильное слайдшоу из Ваших художественных фотографий. Формат DVD .</li>
+            </ul></div>
+            <div class="col-md-3">
+              <ul class="service__list">
+                <li class="service__item"><h3>Пакет «Максимальный» <br> 45000 руб</h3></li>
+                <li class="service__item"><img src="img/fashion.svg" alt=""></li>
+                <li class="service__item">- Профессиональная фотосъемка Вашей свадьбы от сборов жениха и невесты до окончания программы в ресторане.</li>
+                <li class="service__item">- Дополнительный комплект фотоаппаратуры .</li>
+                <li class="service__item">- Профессиональная репортажная и постановочная фотосессии .</li>
+                <li class="service__item">- Обработка ВСЕХ фотографий(тоновая и цветокоррекция),ретушь.</li>
+                <li class="service__item">- Профессиональная обработка художественных снимков (150-200 шт.)</li>
+                <li class="service__item">- Печать самых лучших снимков форматом А-4(20x30) 20 шт.</li>
+                <li class="service__item">- Изготовление настоящей фотокниги 20x30 или 30x30</li>
+                <li class="service__item">+ В ПОДАРОК стильное слайдшоу из Ваших художественных фотографий. Формат DVD .</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </section>
+      <!-- end .cards-->
+      <!-- start masonry -->
+      <section class="gallery" >
+        <div class="container">
+          <div class="mosaicflow">
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0001.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0001.jpg" alt="pic" width="1024" height="683" >
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0001_.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0001_.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0002_copy.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0002_copy.jpg" alt="pic" width="1024" height="954">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0003.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0003.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0004.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0004.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0005.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0005.jpg" alt="pic" width="1024" height="580">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0007.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0007.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0008.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0008.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0008_copy.jpg" class="image-popup-vertical-fit">
+              <img src="img/wed1/0008_copy.jpg" alt="" width="1024" height="683"></a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0009_a.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0009_a.jpg" alt="" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0011.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0011.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0012.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0012.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0013.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0013.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0014.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0014.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0014_copy.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0014_copy.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0015.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0015.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0015_copy.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0015_copy.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0016.jp" class="image-popup-vertical-fit">
+                <img src="img/wed1/0016.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0017.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0017.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0018.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0018.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0019.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0019.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0020.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0020.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0021.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0021.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0022.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0022.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0023.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0023.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0024.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0024.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0025.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0025.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0026.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0026.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0027.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0027.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0028.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0028.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0029.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0029.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0030.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0030.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0031.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0031.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0032_copy.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0032_copy.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0033.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0033.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0034.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0034.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0035.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0035.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0036.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0036.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0037.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0037.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0038.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0038.jpg" alt="pic" width="1024" height="797">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0039.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0039.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0041.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0041.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0042.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0042.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0043.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0043.jpg" alt="pic" width="1024" height="430">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0044.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0044.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0045.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0045.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0046.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0046.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0047.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0047.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0048.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0048.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0049.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0049.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0050.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0051.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0052.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0053.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0054.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0055.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0056.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0057.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0058.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0059.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/006.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0060.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0061.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0062.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0064.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0065.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0066.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0067.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0068.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0069.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="" class="image-popup-vertical-fit">
+                <img src="img/wed1/0070.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0071.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0071.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0072.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0072.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0073.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0073.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0075.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0075.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0077.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0077.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0078.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0078.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0080.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0080.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0081.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0081.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0082.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0082.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0083.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0083.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0084.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0084.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0085.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0085.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0086.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0086.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0087.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0087.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0088.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0088.jpg" alt="pic" width="507" height="760">
+              </a>
+            </div>
+            <div class="mosaicflow__item">
+              <a href="img/wed1/0089.jpg" class="image-popup-vertical-fit">
+                <img src="img/wed1/0089.jpg" alt="pic" width="1024" height="683">
+              </a>
+            </div>
+          </div>
+          <!--         <img src="img/wed1/" alt="">
+          <img src="img/wed1/" alt="">
+          <img src="img/wed1/" alt="">
+          <img src="img/wed1/" alt="">
+          <img src="img/wed1/" alt=""> -->
+        </div>
+      </section>
+      <!-- end masonry -->
+      <!-- start .footer-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 footer__logo">
+              <img src="img/footer_logo.png">
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4 contacts">
+              <h3 class="tel"><a href="+79175020070">+7 (917) 502-00-70</a></h3>
+              <h3 class="email"><a href="">info@nikmayorov</a></h3>
+            </div>
+            <div class="col-md-12 copyright text-center">2016 Студия Николая Майорова</div>
+          </div>
+        </div>
+      </footer>
+      <!-- end .footer -->
+      <div class="hidden"></div>
+      <div class="loader">
+        <div class="loader_inner"></div>
       </div>
-    </div>
-  </section>
-  <!-- end .cards-->
-  <!-- start .footer-->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 footer__logo">
-          <img src="img/footer_logo.png">
-        </div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4 contacts">
-          <h3 class="tel"><a href="+79175020070">+7 (917) 502-00-70</a></h3>
-          <h3 class="email"><a href="">info@nikmayorov</a></h3>
-        </div>
-        <div class="col-md-12 copyright text-center">2016 Студия Николая Майорова</div>
-      </div>
-    </div>
-  </footer>
-  <!-- end .footer -->
-  <div class="hidden"></div>
-  <div class="loader">
-    <div class="loader_inner"></div>
-  </div>
-  <!--[if lt IE 9]>
-  <script src="libs/html5shiv/es5-shim.min.js"></script>
-  <script src="libs/html5shiv/html5shiv.min.js"></script>
-  <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-  <script src="libs/respond/respond.min.js"></script>
-  <![endif]-->
-  
-  <script src="libs/jquery/jquery-1.11.2.min.js"></script>
-  <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-  <script src="libs/waypoints/waypoints.min.js"></script>
-  <script src="libs/animate/animate-css.js"></script>
-  <script src="libs/plugins-scroll/plugins-scroll.js"></script>
-  <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
-  <script src="libs/sticky/jquery.sticky.js"></script>
-  
-  <script src="js/common.js"></script>
-  
-</body>
-</html>
+      <!--[if lt IE 9]>
+      <script src="libs/html5shiv/es5-shim.min.js"></script>
+      <script src="libs/html5shiv/html5shiv.min.js"></script>
+      <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+      <script src="libs/respond/respond.min.js"></script>
+      <![endif]-->
+      
+      <script src="libs/jquery/jquery-1.11.2.min.js"></script>
+      <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+      <script src="libs/waypoints/waypoints.min.js"></script>
+      <script src="libs/animate/animate-css.js"></script>
+      <script src="libs/plugins-scroll/plugins-scroll.js"></script>
+      <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+      <script src="libs/sticky/jquery.sticky.js"></script>
+      <script src="libs/mosaicflow/jquery.mosaicflow.min.js"></script>
+      <script src="libs/magnificPopup/magnificPopup.min.js"></script>
+      
+      <script src="js/common.js"></script>
+      
+      <script type="text/javascript">
+      
+      </script>
+      
+    </body>
+  </html>

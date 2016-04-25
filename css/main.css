@@ -260,16 +260,52 @@ header {
 }
 
 .cards,
-.page__heading {
+.page__heading,
+.cards__heading {
   padding: 40px 0;
+}
+
+.cards__heading h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5em;
+  margin-bottom: 15px;
 }
 
 .service__item:nth-of-type(1) {
   text-align: center;
+  margin-bottom: 15px;
+}
+
+.service__item:nth-of-type(1) h3 {
+  font-weight: 900;
 }
 
 .service__item:nth-of-type(2) {
-  font-weight: 900;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.service__item:nth-of-type(2) img {
+  width: 50%;
+}
+
+.mosaicflow__column {
+  float: left;
+}
+
+.mosaicflow__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mfp-bg {
+  z-index: 10042;
+}
+
+.mfp-wrap {
+  z-index: 10043;
 }
 
 /*# sourceMappingURL=main.css.map */

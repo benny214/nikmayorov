@@ -263,15 +263,71 @@ header{
 //wedding page
 
 .cards,
-.page__heading{
+.page__heading,
+.cards__heading{
   padding: 40px 0;
 }
+
+.cards__heading{
+  h2{
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  }
+}
+
+
+// .service__list{
+//   // &:first-of-type{
+//   //   &:before{
+//   //     width: 0;
+//   //   }
+//   // }
+//   &:before{
+//     content: "";
+//     width: 2px;
+//     height: 100%;
+//     background: #222;
+//     position: absolute;
+//   }
+// }
 
 .service__item{
   &:nth-of-type(1){
     text-align: center;
+    margin-bottom: 15px;
+    h3{
+      font-weight: 900;
+    }
   }
   &:nth-of-type(2){
-    font-weight: 900;
+    text-align: center;
+    margin-bottom: 15px;
+    img{
+      width: 50%;
+    }
   }
+}
+
+// .grid-item{
+//   width: 25%;
+//   height: auto;
+// }
+
+.mosaicflow__column {
+    float:left;
+    }
+.mosaicflow__item img {
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+.mfp-bg{
+  z-index: 10042;
+}
+
+.mfp-wrap{
+  z-index: 10043;
 }
