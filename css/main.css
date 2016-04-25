@@ -291,6 +291,14 @@ header {
   width: 50%;
 }
 
+.service__full .service__item {
+  text-align: center;
+}
+
+.service__full .service__item img {
+  width: 130px;
+}
+
 .mosaicflow {
   padding: 40px 0;
   margin-bottom: 40px;

@@ -311,6 +311,15 @@ header{
   }
 }
 
+.service__full{
+  .service__item{
+    text-align: center;
+    img{
+      width: 130px;
+    }
+  }
+}
+
 // .grid-item{
 //   width: 25%;
 //   height: auto;
