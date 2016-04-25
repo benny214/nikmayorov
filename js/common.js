@@ -59,11 +59,12 @@ $('.slider__list').slick({
   autoplay: true
 });
 
-//sticky header
-$(document).ready(function(){
-  $("#nav").sticky({topSpacing:0});
 
-  $('.image-popup-vertical-fit').magnificPopup({
+$(document).ready(function(){
+//sticky header
+  $("#nav").sticky({topSpacing:0});
+//magnificPopup
+  $('.image-popup').magnificPopup({
     type: 'image',
     closeOnContentClick: true,
     image: {

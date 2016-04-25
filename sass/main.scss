@@ -34,6 +34,7 @@ ul {
 
 img {
   @include img-responsive;
+  outline: none;
 }
 
 button {
@@ -315,6 +316,11 @@ header{
 //   height: auto;
 // }
 
+.mosaicflow{
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
 .mosaicflow__column {
     float:left;
     }
@@ -330,4 +336,21 @@ header{
 
 .mfp-wrap{
   z-index: 10043;
+}
+
+.image-popup{
+  &:visited,
+  &:focus{
+    outline: none;
+  }
+  img{
+  &:focus{
+    outline: none;
+  }
+}
+}
+
+.gallery-wrap{
+  width: 100%;
+  padding: 0;
 }

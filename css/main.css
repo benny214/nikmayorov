@@ -27,6 +27,7 @@ img {
   height: auto;
   max-width: 100%;
   width: auto\9;
+  outline: none;
 }
 
 button {
@@ -290,6 +291,11 @@ header {
   width: 50%;
 }
 
+.mosaicflow {
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
 .mosaicflow__column {
   float: left;
 }
@@ -306,6 +312,20 @@ header {
 
 .mfp-wrap {
   z-index: 10043;
+}
+
+.image-popup:visited,
+.image-popup:focus {
+  outline: none;
+}
+
+.image-popup img:focus {
+  outline: none;
+}
+
+.gallery-wrap {
+  width: 100%;
+  padding: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
