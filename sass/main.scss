@@ -159,6 +159,10 @@ header {
 
     &:last-of-type {
       margin-right: 0;
+
+      &:after {
+        display: none;
+      }
     }
 
     &:after {
@@ -369,5 +373,76 @@ header {
 
   & img {
     margin-bottom: 10px;
+  }
+}
+
+.review__heading {
+  margin: 30px 0;
+}
+
+.review__item {
+  @include clearfix;
+
+  margin-bottom: 30px;
+}
+
+.review__img {
+  float: left;
+  margin-right: 15px;
+  width: 28%;
+}
+
+.review__body {
+  background: rgba(204, 204, 204, 0.4);
+  float: left;
+  width: 70%;
+  padding: 15px;
+}
+
+.review__name {
+  margin-bottom: 15px;
+}
+
+.feedback {
+  padding: 30px 0;
+}
+
+.form__textbox {
+  display: inline-block;
+  width: 48.7%;
+  margin-right: 15px;
+  border: 2px solid #222;
+  padding-left: 15px;
+  padding: 5px 0 5px 15px;
+  margin-bottom: 15px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.form__textarea {
+  display: block;
+  width: 99.4%;
+  height: 150px;
+  border: 2px solid #222;
+  padding: 5px 0 5px 15px;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+.form__submit {
+  float: right;
+  margin-right: 6px;
+  background-color: #fff;
+  border: 2px solid #222;
+  padding: 0.5em 2em;
+  font-size: 18px;
+
+  &:hover {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+    transition: 300ms ease-in;
   }
 }
